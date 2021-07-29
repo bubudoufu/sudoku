@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+}
+main{
+    width: 500px;
+    margin: auto;
+    user-select: none;
+}
+.clickdisable{
+    pointer-events: none;
+}
+.clickenable{
+    color: #6091d3;
+}
+table{
+    border-collapse: collapse;
+}
+.main{
+  overflow: hidden;
+}
+.main tr:hover{
+    background-color: #f3ece3;
+}
+.main td{
+ border: 1px solid #6091d3 ; 
+    text-align: center;
+    font-size:30px;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.main td:hover {
+    background-color: #f3ece3;
+  }
+  .main td:hover:after {
+    content: "";
+    background-color: #f3ece3;
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    top: -100vh;
+    left: 0;
+    z-index: -1;
+  }
+.select td:hover, .box div:hover{
+    background: #f3ece3;
+    cursor: pointer;
+}
+.main tr:first-child td{
+    border-top: 4px solid #6091d3;
+}
+.main tr:nth-of-type(3n) td{
+    border-bottom: 4px solid #6091d3;
+}
+.main td:first-child{
+    border-left: 4px solid #6091d3;
+}
+.main td:nth-of-type(3n){
+    border-right: 4px solid #6091d3;
+}
+.box{
+    margin-top: 10px;
+    display: flex;
+}
+.select{
+    margin-top: 20px;
+}
+.select td{
+    border: 2px #6091d3 solid;
+    text-align: center;
+    font-size:30px;
+    width: 45px;
+    height: 45px;
+}
+.mainClick{
+    background-color: #f3ece3;
+}
+.remove{
+    border: 2px #6091d3 solid;
+    border-radius: 10px;
+    text-align: center;
+    font-size:30px;
+    width: 100px;
+    height: 45px;
+}
+.check{
+    margin-right: 135px;
+    border: 2px #6091d3 solid;
+    border-radius: 10px;
+    text-align: center;
+    font-size:30px;
+    width: 200px;
+    height: 45px;
+}
