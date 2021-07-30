@@ -73,7 +73,6 @@ function check() {
     for (let j = 0; j < 9; j++) {
       sum += Number(td[j].textContent);
     }
-    console.log(sum);
     if (sum != 45) {
       checkFlag = false;
       break;
@@ -86,7 +85,6 @@ function check() {
       let td = tr[j].querySelectorAll("td");
       sum += Number(td[i].textContent);
     }
-    console.log(sum);
     if (sum != 45) {
       checkFlag = false;
       break;
